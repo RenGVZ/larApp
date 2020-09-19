@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function index() {
-        $title = 'Welcome to Laravel';
+        $title = 'Welcome to My Laravel Blog';
         // return view('pages.index', compact('title')\);
         return view('pages.index')->with('title', $title);
     }
 
     public function about() {
-        $title = 'About us';
+        $title = 'About Me';
         return view('pages.about')->with('title', $title);
     }
 
