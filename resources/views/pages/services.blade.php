@@ -1,11 +1,13 @@
-@extends('layouts.app')
-@section('content')
-  <h1>{{$title}}</h1>
-  @if(count($services) > 0)
-    <ul class="list-group">
-      @foreach ($services as $service)
-        <li class="list-group-item">{{$service}}</li>
-      @endforeach
-    </ul>
-  @endif
-@endsection
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>{{config('app.name', 'larApp')}}</title>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Services</h1>
+    <p>These are the services we provide</p>
+  </body>
+</html>
